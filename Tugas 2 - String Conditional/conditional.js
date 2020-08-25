@@ -28,10 +28,10 @@ else {
 
 // Soal No. 2 conditional.js
 
-var tanggal = 21;
+var tanggal = 39;
 var bulan = 2;
 var bulanText;
-var tahun = 1994;
+var tahun = 2000;
 
 console.log("");
 console.log("Soal No. 2 - switch case");
@@ -39,16 +39,16 @@ console.log("");
 if((tanggal < 1 || tanggal > 31) && (bulan < 1 || bulan > 12) && (tahun < 1900 || tahun > 2200)){
 	console.log("Tanggal, Bulan dan Tahun yang dimasukkan salah !");
 }
-else if((tanggal < 1 || tanggal > 31) && (bulan < 1 || bulan > 12) && (tahun > 1899 || tahun > 2201)){
+else if((tanggal < 1 || tanggal > 31) && (bulan < 1 || bulan > 12) && (tahun > 1899 || tahun < 2201)){
 	console.log("Tanggal dan Bulan yang dimasukkan salah !");
 }
-else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13) && (tahun > 1899 || tahun > 2201)){
+else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13) && (tahun < 1900 || tahun > 2200)){
 	console.log("Tanggal dan Tahun yang dimasukkan salah !");
 }
-else if((tanggal > 0 || tanggal < 32) && (bulan > 0 || bulan < 13) && (tahun < 1900 || tahun > 2200)){
+else if((tanggal > 0 || tanggal < 32) && (bulan < 1 || bulan > 12) && (tahun < 1900 || tahun > 2200)){
 	console.log("Bulan dan Tahun yang dimasukkan salah !");
 }
-else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13) && (tahun > 1899 || tahun < 2201)){
+else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13) && (tahun > 1899 || tahun < 2201) && (bulan != 2)){
 	console.log("Tanggal yang dimasukkan salah !");
 }
 else if((tanggal > 0 || tanggal < 32) && (bulan < 1 || bulan > 12) && (tahun > 1899 || tahun < 2201)){
