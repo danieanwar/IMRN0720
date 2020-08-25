@@ -36,18 +36,31 @@ var tahun = 1994;
 console.log("");
 console.log("Soal No. 2 - switch case");
 console.log("");
-if((tanggal < 1 || tanggal > 31) && (bulan < 1 || bulan > 12)){
+if((tanggal < 1 || tanggal > 31) && (bulan < 1 || bulan > 12) && (tahun < 1900 || tahun > 2200)){
+	console.log("Tanggal, Bulan dan Tahun yang dimasukkan salah !");
+}
+else if((tanggal < 1 || tanggal > 31) && (bulan < 1 || bulan > 12) && (tahun > 1899 || tahun > 2201)){
 	console.log("Tanggal dan Bulan yang dimasukkan salah !");
 }
-else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13)){
+else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13) && (tahun > 1899 || tahun > 2201)){
+	console.log("Tanggal dan Tahun yang dimasukkan salah !");
+}
+else if((tanggal > 0 || tanggal < 32) && (bulan > 0 || bulan < 13) && (tahun < 1900 || tahun > 2200)){
+	console.log("Bulan dan Tahun yang dimasukkan salah !");
+}
+else if((tanggal < 1 || tanggal > 31) && (bulan > 0 || bulan < 13) && (tahun > 1899 || tahun < 2201)){
 	console.log("Tanggal yang dimasukkan salah !");
 }
-else if((tanggal > 0 || tanggal < 32) && (bulan < 1 || bulan > 12)){
+else if((tanggal > 0 || tanggal < 32) && (bulan < 1 || bulan > 12) && (tahun > 1899 || tahun < 2201)){
 	console.log("Bulan yang dimasukkan salah !");
+}
+else if((tanggal > 0 || tanggal < 32) && (bulan > 0 || bulan < 13) && (tahun < 1900 || tahun > 2200)){
+	console.log("Tahun yang dimasukkan salah !");
 }
 else if ((tanggal < 1 || tanggal > 30) && (bulan = 2)){
 	console.log("Bulan Februari hanya memiliki maksimal 30 hari");
 }
+
 else {
 switch(bulan) {
   case 1:
@@ -99,7 +112,7 @@ switch(bulan) {
     console.log(tanggal + " " + bulanText + " " + tahun);
     break;
   default:
-    console.log("I have never heard of that fruit...");
+    console.log("Au ah Gelap !");
 	}
 }
 
