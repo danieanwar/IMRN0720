@@ -90,7 +90,7 @@ var x=0;
 
 function sum(startNum, finishNum, step){
 	if((startNum > finishNum) && (step != null)){
-		angka = [];
+		jumlah = 0;
 		while(startNum >= finishNum){
 			i = startNum;
 			angka.push(i);
@@ -100,7 +100,7 @@ function sum(startNum, finishNum, step){
 		return jumlah;
 	}
 	else if((startNum < finishNum) && (step != null)){
-		angka = [];
+		jumlah = 0;
 		while(startNum <= finishNum){
 			i = startNum;
 			angka.push(i);
@@ -110,6 +110,7 @@ function sum(startNum, finishNum, step){
 		return jumlah;
 	}
 	else if((startNum > finishNum) && (step == null)){
+		jumlah = 0;
 		while(startNum >= finishNum){
 			i = startNum;
 			angka.push(i);
@@ -119,6 +120,7 @@ function sum(startNum, finishNum, step){
 		return jumlah;
 	}
 	else if((startNum < finishNum) && (step == null)){
+		jumlah = 0;
 		while(startNum <= finishNum){
 			i = startNum;
 			angka.push(i);
