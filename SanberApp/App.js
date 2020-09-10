@@ -8,13 +8,16 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 // import YoutubeUI from './tugas/tugas12/App'
-import LoginScreen from './tugas/tugas13/LoginScreen';
-import RegisterScreen from './tugas/tugas13/RegisterScreen';
-import AboutScreen from './tugas/tugas13/AboutScreen';
+//import LoginScreen from './tugas/tugas13/LoginScreen';
+//import RegisterScreen from './tugas/tugas13/RegisterScreen';
+//import AboutScreen from './tugas/tugas13/AboutScreen';
+//import Tugas14 from './tugas/Tugas14/App'
+import Tugas14 from './tugas/Tugas14/SkillScreen'
 
 export default function App() {
   return (
-    <NavigationContainer>
+
+/*      <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
             name="Login"
@@ -30,14 +33,8 @@ export default function App() {
           />
         </Stack.Navigator>
       </NavigationContainer>
+*/
+        <Tugas14 />
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
